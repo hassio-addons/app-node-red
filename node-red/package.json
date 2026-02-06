@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "addon-node-red",
+  "name": "app-node-red",
   "description": "A visual tool for wiring the Internet of Things",
-  "homepage": "https://addons.community",
-  "repository": "https://github.com/hassio-addons/addon-node-red",
+  "homepage": "https://frenck.dev/home-assistant-apps",
+  "repository": "https://github.com/hassio-addons/app-node-red",
   "license": "MIT",
   "main": "node_modules/node-red/red/red.js",
   "scripts": {

@@ -9,7 +9,7 @@ if ("theme" in options) {
   }
 }
 
-// Sane and required defaults for the add-on
+// Sane and required defaults for the app
 config.debugUseColors = false;
 config.flowFile = "flows.json";
 config.nodesDir = "/config/nodes";
@@ -23,7 +23,7 @@ config.httpNodeRoot = "/endpoint";
 // Disable authentication, let HA handle that
 config.adminAuth = null;
 
-// Disable SSL, since the add-on handles that
+// Disable SSL, since the app handles that
 config.https = null;
 
 // Credential secret

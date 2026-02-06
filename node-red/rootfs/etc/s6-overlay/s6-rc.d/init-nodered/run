@@ -1,13 +1,13 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community App: Node-RED
 # Configures Node-RED before running
 # ==============================================================================
 declare port
 
-# Migrate add-on data from the Home Assistant config folder,
-# to the add-on configuration folder.
+# Migrate app data from the Home Assistant config folder,
+# to the app configuration folder.
 if ! bashio::fs.file_exists '/config/settings.js' \
     && bashio::fs.file_exists '/homeassistant/node-red/settings.js'; then
     shopt -s dotglob
@@ -38,7 +38,7 @@ if ! bashio::var.has_value "${port}"; then
     bashio::log.warning "will not work!"
     bashio::log.warning
     bashio::log.warning "Please assign a port in the Network section of this"
-    bashio::log.warning "add-on configuration."
+    bashio::log.warning "app configuration."
     bashio::log.warning
 fi
 
