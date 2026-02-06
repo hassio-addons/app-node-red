@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community App: Node-RED
 # Configures NGINX for use with Node-RED
 # ==============================================================================
 declare admin_port

@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community App: Node-RED
 # Starts Node-RED
 # ==============================================================================
 export NODE_PATH=/opt/node_modules:/data/node_modules

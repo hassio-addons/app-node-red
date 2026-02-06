@@ -18,26 +18,26 @@
  * PLEASE NOTE! IMPORTANT! READ!
  *
  * This is a modified version of the settings file. Some parts of the
- * settings are actually controlled by the Home Assistant add-on.
+ * settings are actually controlled by the Home Assistant app.
  *
  * Parts that are handled by it, are removed from this settings template.
- * The following configuration keys are controlled by the add-on and removed.
+ * The following configuration keys are controlled by the app and removed.
  *
- * - uiPort (port setting in the add-on log)
- * - uiHost (no need to manually configure this in the add-on)
- * - debugUseColors (disabled, won't work in the add-on)
+ * - uiPort (port setting in the app log)
+ * - uiHost (no need to manually configure this in the app)
+ * - debugUseColors (disabled, won't work in the app)
  * - flowFile (fixed to flows.json)
- * - credentialSecret (credentials_secret in the add-on configuration)
+ * - credentialSecret (credentials_secret in the app configuration)
  * - userDir (is set fixed to `/config`)
  * - nodesDir (is set fixed to `/config/nodes`)
- * - adminAuth (known as users in the add-on configuration)
- * - https (ssl settings in the add-on configuration)
- * - logging.console.level (log_level in the add-on configuration)
- * - httpNodeAuth (http_node settings in the add-on configuration)
- * - httpStaticAuth (http_static settings in the add-on configuration)
+ * - adminAuth (known as users in the app configuration)
+ * - https (ssl settings in the app configuration)
+ * - logging.console.level (log_level in the app configuration)
+ * - httpNodeAuth (http_node settings in the app configuration)
+ * - httpStaticAuth (http_static settings in the app configuration)
  * - httpNodeRoot (set fixed to `/endpoint` )
  *
- * If you like to change those settings, some are available via the add-on
+ * If you like to change those settings, some are available via the app
  * settings/option in the Supervisor panel in Home Assistant.
  */
 

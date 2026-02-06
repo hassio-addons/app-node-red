@@ -1,7 +1,7 @@
 #!/command/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community App: Node-RED
 # Take down the S6 supervision tree when Node-RED fails
 # ==============================================================================
 declare exit_code
