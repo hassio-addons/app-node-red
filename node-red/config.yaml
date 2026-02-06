@@ -3,7 +3,7 @@ name: Node-RED
 version: dev
 slug: nodered
 description: Flow-based programming for the Internet of Things
-url: https://github.com/hassio-addons/addon-node-red
+url: https://github.com/hassio-addons/app-node-red
 ingress: true
 ingress_port: 0
 ingress_stream: true

@@ -1,6 +1,6 @@
 #!/command/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Node-RED
+# Home Assistant Community App: Node-RED
 # Take down the S6 supervision tree when Nginx fails
 # ==============================================================================
 declare exit_code
