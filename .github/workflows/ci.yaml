@@ -12,8 +12,9 @@ on:
 
 permissions:
   actions: read
-  contents: read
+  contents: write
   packages: read
+  pull-requests: read
   security-events: write
 
 jobs:
