@@ -113,7 +113,7 @@ Sets one of the Node-RED themes. Currently available options:
 - `default`
 - `aurora`
 - `cobalt2`
-- `dark`
+- `dark-modern`
 - `dracula`
 - `espresso-libre`
 - `github-dark`
