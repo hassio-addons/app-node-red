@@ -8,14 +8,14 @@ declare admin_port
 
 # Generate Ingress configuration
 bashio::var.json \
-    interface "$(bashio::addon.ip_address)" \
-    port "^$(bashio::addon.ingress_port)" \
+    interface "$(bashio::app.ip_address)" \
+    port "^$(bashio::app.ingress_port)" \
     | tempio \
         -template /etc/nginx/templates/ingress.gtpl \
         -out /etc/nginx/servers/ingress.conf
 
 # Generate direct access configuration, if enabled.
-admin_port=$(bashio::addon.port 80)
+admin_port=$(bashio::app.port 80)
 if bashio::var.has_value "${admin_port}"; then
     bashio::config.require.ssl
     bashio::var.json \
