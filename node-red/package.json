@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "node_modules/node-red/red/red.js",
   "scripts": {
-    "start": "node $NODE_OPTIONS node_modules/node-red/red.js"
+    "start": "node node_modules/node-red/red.js"
   },
   "dependencies": {
     "bcryptjs": "3.0.3",
