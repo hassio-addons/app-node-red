@@ -1,8 +1,10 @@
 server {
     {{ if not .ssl }}
     listen {{ .port }} default_server;
+    listen [::]:{{ .port }} default_server;
     {{ else }}
     listen {{ .port }} default_server ssl;
+    listen [::]:{{ .port }} default_server ssl;
     http2 on;
     {{ end }}
 
