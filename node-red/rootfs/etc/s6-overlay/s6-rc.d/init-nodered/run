@@ -29,6 +29,15 @@ if ! bashio::fs.file_exists '/config/settings.js'; then
     sed -i "s/%%ID%%/${id}/" "/config/flows.json"
 fi
 
+# The "dark" theme was renamed to "dark-modern" in theme-collection v5.
+# Migrate the stored option so it stays valid and shows the new value.
+if bashio::config.equals 'theme' 'dark'; then
+    bashio::log.notice "Migrating deprecated 'dark' theme to 'dark-modern'..."
+    bashio::app.option 'theme' 'dark-modern' \
+        || bashio::log.warning \
+            "Could not migrate the 'theme' option, continuing anyway..."
+fi
+
 # Pass in port & SSL settings
 port=$(bashio::app.port 80)
 sed -i "s/%%PORT%%/${port:-80}/" "/opt/node_modules/node-red-dashboard/nodes/ui_base.html"
