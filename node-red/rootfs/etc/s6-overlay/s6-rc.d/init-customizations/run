@@ -28,8 +28,8 @@ if bashio::config.has_value 'npm_packages'; then
     done
 
     npm install \
-        --no-optional \
-        --only=production \
+        --omit=dev \
+        --omit=optional \
         "${npmlist[@]}" \
            || bashio::exit.nok "Failed to install a specified npm package"
 fi
