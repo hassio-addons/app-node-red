@@ -1,0 +1,16 @@
+---
+name: Release Drafter
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  workflows:
+    uses: hassio-addons/workflows/.github/workflows/release-drafter.yaml@383c10d83acbe341acbb35a4a61bfd14827f00f0 # v3.0.0
