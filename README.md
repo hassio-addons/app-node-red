@@ -41,7 +41,7 @@ You have several options to get them answered:
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 - The [Node-RED documentation][nodered-docs]
 
-You could also [open an issue here][issue] GitHub.
+You could also [open an issue here][issue] on GitHub.
 
 ## Contributing
 
@@ -93,11 +93,11 @@ SOFTWARE.
 
 [bonanitech]: https://github.com/bonanitech
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/app-node-red.svg
-[commits]: https://github.com/hassio-addons/app-node-red/commits/master
+[commits]: https://github.com/hassio-addons/app-node-red/commits/main
 [contributors]: https://github.com/hassio-addons/app-node-red/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/app-node-red/blob/master/node-red/DOCS.md
+[docs]: https://github.com/hassio-addons/app-node-red/blob/main/node-red/DOCS.md
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-node-red/55023?u=frenck
 [frenck]: https://github.com/frenck
 [github-actions-shield]: https://github.com/hassio-addons/app-node-red/workflows/CI/badge.svg

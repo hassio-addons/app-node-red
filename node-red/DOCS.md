@@ -104,7 +104,7 @@ Node-RED from being able to decrypt your existing credentials and they will be
 lost._
 
 **Note**: _If you have manually enabled the use of project in Node-RED, this
-option will, eventhough required, be ignored by Node-RED._
+option will, even though required, be ignored by Node-RED._
 
 ### Option: `theme`
 
@@ -172,7 +172,7 @@ properties can be used:
 ### Option: `system_packages`
 
 Allows you to specify additional [Alpine packages][alpine-packages] to be
-installed to your Node-RED setup (e.g., `g++`. `make`, `ffmpeg`).
+installed to your Node-RED setup (e.g., `g++`, `make`, `ffmpeg`).
 
 **Note**: _Adding many packages will result in a longer start-up time
 for the app._
@@ -194,7 +194,7 @@ single time this app starts.
 
 ### Option: `safe_mode`
 
-Setting this option to `true` will start Node-Red with the `--safe` flag set,
+Setting this option to `true` will start Node-RED with the `--safe` flag set,
 starting the application without starting any flows for troubleshooting.
 
 ### Option: `leave_front_door_open`
@@ -248,7 +248,7 @@ Save the file and restart the Node-RED app.
   "Network" configuration section of the app.
 
 - If you cannot access HTTP nodes or Node-RED Dashboard, please check
-  if you URL starts with `/endpoint/`, or else Home Assistant authentication
+  if your URL starts with `/endpoint/`, or else Home Assistant authentication
   will kick in.
 
 - If the following error is seen after an update:
@@ -286,7 +286,7 @@ You have several options to get them answered:
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 - The [Node-RED documentation][nodered-docs]
 
-You could also [open an issue here][issue] GitHub.
+You could also [open an issue here][issue] on GitHub.
 
 ## Authors & contributors
 
