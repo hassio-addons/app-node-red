@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "bcryptjs": "3.0.3",
-    "js-yaml": "4.2.0",
+    "js-yaml": "5.0.0",
     "node-red": "5.0.0",
     "node-red-contrib-bigtimer": "2.8.6",
     "node-red-contrib-cast": "0.2.17",
