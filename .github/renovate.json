@@ -6,6 +6,12 @@
   "labels": ["dependencies", "no-stale"],
   "commitMessagePrefix": "⬆️",
   "commitMessageTopic": "{{depName}}",
+  "customDatasources": {
+    "alpine": {
+      "defaultRegistryUrlTemplate": "https://dl-cdn.alpinelinux.org/alpine/v3.24/main/x86_64/",
+      "format": "html"
+    }
+  },
   "customManagers": [
     {
       "customType": "regex",
@@ -25,14 +31,23 @@
         "\\s\\s(?<package>[a-z0-9][a-z0-9-_]+)=(?<currentValue>[a-z0-9-_.]+)\\s+"
       ],
       "versioningTemplate": "loose",
-      "datasourceTemplate": "repology",
-      "depNameTemplate": "alpine_3_24/{{{replace 'openssh-client-default' 'openssh' package}}}"
+      "datasourceTemplate": "custom.alpine",
+      "depNameTemplate": "alpine_3_24/{{{replace 'openssh-client-default' 'openssh' package}}}",
+      "extractVersionTemplate": "^{{{package}}}-(?<version>\\d.*)\\.apk$"
     }
   ],
   "packageRules": [
     {
-      "matchDatasources": ["repology"],
+      "matchDatasources": ["custom.alpine"],
       "automerge": true
+    },
+    {
+      "description": "Packages that live in the Alpine community repository",
+      "matchDatasources": ["custom.alpine"],
+      "matchPackageNames": ["alpine_3_24/npm"],
+      "registryUrls": [
+        "https://dl-cdn.alpinelinux.org/alpine/v3.24/community/x86_64/"
+      ]
     },
     {
       "groupName": "App base image",
