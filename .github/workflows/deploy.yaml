@@ -17,7 +17,7 @@ jobs:
       contents: read
       packages: read
       security-events: write
-    uses: hassio-addons/workflows/.github/workflows/app-ci.yaml@c953d10f34dac22eb68c1cdedbbc4106a89bef88 # v3.0.1
+    uses: hassio-addons/workflows/.github/workflows/app-ci.yaml@e0c532a7b0fb264b3ff0c718c2c0308a0c8c1390 # v4.0.0
     with:
       slug: "node-red"
 
@@ -26,7 +26,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    uses: hassio-addons/workflows/.github/workflows/app-deploy.yaml@c953d10f34dac22eb68c1cdedbbc4106a89bef88 # v3.0.1
+    uses: hassio-addons/workflows/.github/workflows/app-deploy.yaml@e0c532a7b0fb264b3ff0c718c2c0308a0c8c1390 # v4.0.0
     with:
       slug: "node-red"
     secrets:
