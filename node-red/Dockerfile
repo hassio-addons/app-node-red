@@ -25,7 +25,7 @@ RUN \
         nginx=1.30.4-r1 \
         nodejs=24.18.1-r0 \
         npm=11.12.1-r0 \
-        openssh-client-default=10.3_p1-r0 \
+        openssh-client-default=10.3_p1-r1 \
         patch=2.8-r0 \
     \
     && npm install \
