@@ -32,6 +32,14 @@ server {
         proxy_pass http://backend;
     }
 
+    {{ if .expose_node_resources }}
+    # Static files shipped by installed nodes, which Node-RED itself serves
+    # without authentication. Needed by, e.g., Dashboard 2.0 third-party widgets.
+    location /resources/ {
+        proxy_pass http://backend;
+    }
+    {{ end }}
+
     location / {
         {{ if not .leave_front_door_open }}
         auth_request /authentication;

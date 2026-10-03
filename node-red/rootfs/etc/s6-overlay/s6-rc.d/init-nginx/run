@@ -20,6 +20,7 @@ if bashio::var.has_value "${admin_port}"; then
     bashio::config.require.ssl
     bashio::var.json \
         certfile "$(bashio::config 'certfile')" \
+        expose_node_resources "^$(bashio::config 'expose_node_resources')" \
         keyfile "$(bashio::config 'keyfile')" \
         leave_front_door_open "^$(bashio::config 'leave_front_door_open')" \
         port "^${admin_port}" \
