@@ -20,7 +20,7 @@ RUN \
         python3-dev=3.14.10-r1 \
     \
     && apk add --no-cache \
-        git=2.54.0-r0 \
+        git=2.54.1-r0 \
         icu-data-full=78.1-r0 \
         nginx=1.30.6-r0 \
         nodejs=24.22.1-r1 \
