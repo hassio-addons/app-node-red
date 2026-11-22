@@ -16,7 +16,7 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r4 \
         linux-headers=7.0.0-r1 \
-        py3-pip=26.1.2-r0 \
+        py3-pip=26.1.2-r1 \
         python3-dev=3.14.10-r1 \
     \
     && apk add --no-cache \
